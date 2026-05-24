@@ -1,0 +1,8 @@
+{
+  "name": "Paint Quantity Calculator",
+  "short_name": "paint-quanti",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1"
+}

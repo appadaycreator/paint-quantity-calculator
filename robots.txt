@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://appadaycreator.com/paint-quantity-calculator/sitemap.xml
