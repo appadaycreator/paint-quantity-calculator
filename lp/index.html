@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Consent Mode v2 -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});(function(){try{var k='cookie-consent-v2',o='cookie-consent';var c=localStorage.getItem(k);if(!c&&localStorage.getItem(o)==='1')c='granted';if(c){var s=c==='granted'?'granted':'denied';gtag('consent','update',{'analytics_storage':s,'ad_storage':s,'ad_user_data':s,'ad_personalization':s});}}catch(e){}})();</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-TXQGZRF9");</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F97316">
+<title>ペンキ・塗料の必要量と費用を自動計算【DIYリフォーム・無料ツール】</title>
+<meta name="description" content="壁面積と塗料の種類を入力するだけで必要量・缶数・費用を自動計算。油性・水性・防水塗料に対応。DIYリフォームで使える無料ツール。">
+<link rel="canonical" href="https://appadaycreator.com/paint-quantity-calculator/lp/">
+<meta property="og:title" content="ペンキ・塗料の必要量と費用を自動計算【DIYリフォーム・無料ツール】">
+<meta property="og:description" content="壁面積と塗料の種類を入力するだけで必要量・缶数・費用を自動計算。油性・水性・防水塗料に対応。DIYリフォームで使える無料ツール。">
+<meta property="og:url" content="https://appadaycreator.com/paint-quantity-calculator/lp/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://appadaycreator.com/paint-quantity-calculator/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ペンキ・塗料の必要量と費用を自動計算">
+<meta name="twitter:image" content="https://appadaycreator.com/paint-quantity-calculator/ogp.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;background:#fff;color:#1C1917;line-height:1.7;}
+
+/* ── Header ── */
+.lp-header{background:#fff;border-bottom:1px solid #E2E8F0;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+.lp-logo{font-size:17px;font-weight:900;color:#F97316;text-decoration:none;letter-spacing:-.3px;}
+.lp-logo span{color:#1C1917;}
+.lp-nav{display:flex;gap:28px;align-items:center;}
+.lp-nav a{color:#374151;font-size:14px;text-decoration:none;font-weight:600;}
+.lp-nav a:hover{color:#F97316;}
+.btn-header{background:#F97316;color:#fff;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap;}
+.btn-header:hover{background:#EA580C;}
+
+/* ── Hero ── */
+.hero{background:linear-gradient(135deg,#FFF7ED 0%,#FFEDD5 60%,#FED7AA 100%);padding:72px 24px 56px;}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#F97316;color:#fff;font-size:12px;font-weight:700;padding:5px 16px;border-radius:20px;margin-bottom:18px;}
+.hero-h1{font-size:42px;font-weight:900;line-height:1.25;color:#1C1917;margin-bottom:18px;}
+.hero-h1 em{color:#F97316;font-style:normal;}
+.hero-sub{font-size:16px;color:#57534E;line-height:1.85;margin-bottom:36px;}
+.hero-cta-group{display:flex;flex-direction:column;gap:12px;align-items:flex-start;}
+.btn-lg{background:#F97316;color:#fff;padding:18px 44px;border-radius:12px;font-size:18px;font-weight:800;text-decoration:none;display:inline-block;box-shadow:0 6px 20px rgba(249,115,22,.35);transition:transform .2s,box-shadow .2s;}
+.btn-lg:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(249,115,22,.45);}
+.hero-note{font-size:12px;color:#78716C;display:flex;gap:12px;}
+.hero-note span::before{content:'✓ ';}
+
+/* Hero mockup card */
+.hero-mock{background:#fff;border-radius:20px;padding:28px;box-shadow:0 12px 40px rgba(0,0,0,.12);border:1px solid #FED7AA;}
+.mock-label{font-size:13px;font-weight:700;color:#78716C;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #F3F4F6;display:flex;align-items:center;gap:8px;}
+.mock-main{text-align:center;padding:12px 0 20px;}
+.mock-num{font-size:64px;font-weight:900;color:#F97316;line-height:1;}
+.mock-unit{font-size:24px;font-weight:600;color:#78716C;}
+.mock-rows{display:flex;flex-direction:column;gap:0;}
+.mock-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-top:1px solid #F3F4F6;font-size:15px;}
+.mock-row .ml{color:#78716C;}
+.mock-row .mv{font-weight:800;color:#1C1917;}
+.mock-row .mv.price{color:#1E40AF;font-size:20px;}
+.mock-actions{display:flex;gap:8px;margin-top:16px;padding-top:12px;border-top:1px solid #F3F4F6;}
+.mock-btn{flex:1;background:#F8FAFC;border:1px solid #E2E8F0;color:#374151;padding:7px 10px;border-radius:7px;font-size:12px;font-weight:600;text-align:center;}
+
+/* ── Section base ── */
+section{padding:72px 24px;}
+.sec-inner{max-width:1100px;margin:0 auto;}
+.sec-title{font-size:30px;font-weight:900;color:#1C1917;text-align:center;margin-bottom:10px;}
+.sec-title em{color:#F97316;font-style:normal;}
+.sec-sub{text-align:center;color:#57534E;font-size:15px;margin-bottom:44px;}
+
+/* ── Problems ── */
+.problems{background:#F8FAFC;}
+.prob-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.prob-card{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.prob-icon{font-size:40px;flex-shrink:0;line-height:1;}
+.prob-text h3{font-size:16px;font-weight:700;color:#1C1917;margin-bottom:6px;}
+.prob-text p{font-size:13px;color:#6B7280;line-height:1.75;}
+
+/* ── Features ── */
+.features{background:#1E3A8A;}
+.features .sec-title{color:#fff;}
+.features .sec-sub{color:#93C5FD;}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.feat-card{background:#fff;border-radius:16px;padding:32px 24px;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.1);}
+.feat-icon{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#FFEDD5,#FED7AA);display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 18px;}
+.feat-card h3{font-size:17px;font-weight:800;color:#1C1917;margin-bottom:10px;}
+.feat-card p{font-size:13px;color:#6B7280;line-height:1.8;}
+
+/* ── Mobile ── */
+.mobile-section{background:#fff;}
+.mob-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.mob-phone{background:#1C1917;border-radius:36px;padding:20px;box-shadow:0 16px 48px rgba(0,0,0,.18);max-width:240px;margin:0 auto;position:relative;}
+.mob-phone::before{content:'';display:block;width:80px;height:5px;background:#555;border-radius:3px;margin:0 auto 16px;}
+.mob-screen{background:#FFF7ED;border-radius:18px;padding:18px;overflow:hidden;}
+.ms-row{margin-bottom:10px;}
+.ms-lbl{font-size:10px;color:#78716C;font-weight:600;margin-bottom:3px;}
+.ms-val{background:#fff;border:1.5px solid #E2E8F0;border-radius:6px;padding:7px 12px;font-size:13px;font-weight:600;color:#1C1917;}
+.ms-cta{background:#F97316;color:#fff;border-radius:8px;padding:10px;text-align:center;font-size:12px;font-weight:700;margin-top:12px;}
+.mob-text h2{font-size:28px;font-weight:900;color:#1C1917;margin-bottom:16px;}
+.mob-text p{font-size:15px;color:#57534E;line-height:1.85;margin-bottom:20px;}
+.mob-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.mob-tag{background:#FFEDD5;color:#C2410C;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;}
+
+/* ── Result preview ── */
+.result-preview{background:#F8FAFC;}
+.rp-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.rp-text h2{font-size:28px;font-weight:900;color:#1C1917;margin-bottom:16px;}
+.rp-text p{font-size:15px;color:#57534E;line-height:1.85;margin-bottom:20px;}
+.rp-btns{display:flex;gap:10px;flex-wrap:wrap;}
+.rp-btn{border:1.5px solid #E2E8F0;background:#fff;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:600;color:#374151;}
+.rp-result-card{background:#fff;border-radius:20px;padding:28px;box-shadow:0 8px 32px rgba(0,0,0,.08);border:1px solid #E2E8F0;}
+
+/* ── Steps ── */
+.steps-section{background:#fff;}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;}
+.steps-grid::after{content:'';position:absolute;top:40px;left:calc(16.67% + 12px);right:calc(16.67% + 12px);height:2px;background:linear-gradient(90deg,#F97316 0%,#1E40AF 100%);z-index:0;}
+.step-card{background:#fff;border-radius:16px;padding:28px 24px;text-align:center;border:1px solid #E2E8F0;box-shadow:0 2px 8px rgba(0,0,0,.04);position:relative;z-index:1;}
+.step-num{width:56px;height:56px;border-radius:50%;background:#F97316;color:#fff;font-size:22px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 4px 12px rgba(249,115,22,.3);}
+.step-ico{font-size:32px;margin-bottom:12px;display:block;}
+.step-card h3{font-size:16px;font-weight:800;color:#1C1917;margin-bottom:8px;}
+.step-card p{font-size:13px;color:#6B7280;line-height:1.75;}
+
+/* ── Room guide ── */
+.rooms-section{background:#F8FAFC;}
+.rooms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.room-card{background:#fff;border-radius:16px;overflow:hidden;border:1px solid #E2E8F0;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.room-img{height:130px;display:flex;align-items:center;justify-content:center;font-size:60px;}
+.room-body{padding:20px;}
+.room-tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 12px;border-radius:12px;margin-bottom:8px;}
+.room-body h3{font-size:15px;font-weight:800;color:#1C1917;margin-bottom:6px;}
+.room-body p{font-size:13px;color:#6B7280;line-height:1.75;}
+
+/* ── FAQ ── */
+.faq-section{background:#fff;}
+.faq-list{max-width:740px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+.faq-item{background:#fff;border:1px solid #E2E8F0;border-radius:12px;overflow:hidden;}
+.faq-q{padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:#1C1917;font-size:15px;user-select:none;}
+.faq-toggle{font-size:22px;color:#F97316;font-weight:400;flex-shrink:0;transition:transform .2s;}
+.faq-item.open .faq-toggle{transform:rotate(45deg);}
+.faq-a{display:none;padding:0 20px 18px;font-size:14px;color:#6B7280;line-height:1.85;}
+.faq-item.open .faq-a{display:block;}
+
+/* ── CTA Banner ── */
+.cta-banner{background:linear-gradient(135deg,#F97316 0%,#EA580C 100%);padding:72px 24px;text-align:center;}
+.cta-banner h2{font-size:30px;font-weight:900;color:#fff;margin-bottom:10px;}
+.cta-banner p{color:#FFEDD5;font-size:15px;margin-bottom:32px;}
+.btn-white{background:#fff;color:#F97316;padding:18px 56px;border-radius:12px;font-size:19px;font-weight:900;text-decoration:none;display:inline-block;box-shadow:0 6px 20px rgba(0,0,0,.2);transition:transform .2s;}
+.btn-white:hover{transform:translateY(-2px);}
+.cta-sub{color:#FFEDD5;font-size:13px;margin-top:14px;}
+
+/* ── Footer ── */
+.lp-footer{background:#1C1917;color:#A8A29E;padding:36px 24px;text-align:center;font-size:12px;}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;}
+.footer-links a{color:#D6D3D1;text-decoration:none;}
+.footer-links a:hover{color:#fff;}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-mock{display:none;}
+  .mob-inner{grid-template-columns:1fr;}
+  .mob-phone{display:none;}
+  .rp-inner{grid-template-columns:1fr;}
+  .feat-grid{grid-template-columns:1fr;}
+  .steps-grid{grid-template-columns:1fr;}
+  .steps-grid::after{display:none;}
+  .rooms-grid{grid-template-columns:1fr;}
+  .prob-grid{grid-template-columns:1fr;}
+}
+@media(max-width:680px){
+  .lp-nav{display:none;}
+  .hero-h1{font-size:28px;}
+  .sec-title{font-size:22px;}
+  .btn-lg{padding:14px 32px;font-size:16px;}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Header -->
+<header class="lp-header">
+  <a href="https://appadaycreator.com/" class="lp-logo">🎨 <span>AppADayCreator</span></a>
+  <nav class="lp-nav" aria-label="メインナビゲーション">
+    <a href="#features">特長</a>
+    <a href="#steps">使い方</a>
+    <a href="#guide">ガイド</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a href="../" class="btn-header">必要量を計算する →</a>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">🆓 登録不要・完全無料</div>
+      <h1 class="hero-h1">ペンキ・塗料の<br><em>必要量と費用</em>を<br>自動計算</h1>
+      <p class="hero-sub">壁面積と塗料の種類を入力するだけで<br>必要量・缶数・費用を即座に計算。<br>DIY塗装の材料買い間違いをゼロに。</p>
+      <div class="hero-cta-group">
+        <a href="../" class="btn-lg">必要量を計算する →</a>
+        <div class="hero-note">
+          <span>登録不要</span>
+          <span>完全無料</span>
+          <span>スマホ対応</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-mock" aria-hidden="true">
+      <div class="mock-label">🎨 計算結果プレビュー</div>
+      <div class="mock-main">
+        <div class="mock-num">3.60 <span class="mock-unit">L</span></div>
+      </div>
+      <div class="mock-rows">
+        <div class="mock-row"><span class="ml">必要缶数（4L缶）</span><span class="mv">1缶</span></div>
+        <div class="mock-row"><span class="ml">概算費用</span><span class="mv price">¥4,800</span></div>
+        <div class="mock-row"><span class="ml">塗装面積</span><span class="mv">7.5 ㎡</span></div>
+        <div class="mock-row"><span class="ml">塗料の種類</span><span class="mv">水性（室内用）</span></div>
+        <div class="mock-row"><span class="ml">塗布回数</span><span class="mv">2回塗り</span></div>
+      </div>
+      <div class="mock-actions">
+        <div class="mock-btn">📤 SNSシェア</div>
+        <div class="mock-btn">🖨️ PDF印刷</div>
+        <div class="mock-btn">🔄 再計算</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Problems -->
+<section class="problems" id="problems">
+  <div class="sec-inner">
+    <h2 class="sec-title">こんな<em>お悩み</em>はありませんか？</h2>
+    <p class="sec-sub">ペンキ・塗料の計算でよくある失敗をゼロにします</p>
+    <div class="prob-grid">
+      <div class="prob-card">
+        <div class="prob-icon">😰</div>
+        <div class="prob-text">
+          <h3>「ペンキが途中で足りなくなった...」</h3>
+          <p>目分量で買ったら途中で塗料が足りなくなり、同じ色が売り切れで困った経験はありませんか？</p>
+        </div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon">🪣</div>
+        <div class="prob-text">
+          <h3>「余りすぎて缶がいくつも余った」</h3>
+          <p>多めに買ったら必要以上に余り、処分に困ったことはありませんか？</p>
+        </div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon">🧮</div>
+        <div class="prob-text">
+          <h3>「面積×塗布量の計算が複雑でわからない」</h3>
+          <p>塗料缶に書かれた「塗り広がり率」から必要量を計算するのが面倒でした。</p>
+        </div>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon">💰</div>
+        <div class="prob-text">
+          <h3>「費用の見当がつかず予算オーバーに」</h3>
+          <p>購入前に合計費用がわからず、現場で予算を超えてしまった失敗はありませんか？</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+  <div class="sec-inner">
+    <h2 class="sec-title">このツールの<em style="color:#FBBF24;">3つの特長</em></h2>
+    <p class="sec-sub">塗料の計算をシンプルに、正確に</p>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🖩</div>
+        <h3>面積・缶数・費用を瞬時に計算</h3>
+        <p>壁の幅と高さを入力するだけで、必要量（L）・缶数・概算費用を自動算出。計算の手間がゼロになります。複数パターンの比較保存も可能。</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🎨</div>
+        <h3>油性・水性・防水に完全対応</h3>
+        <p>塗料の種類ごとに異なる標準塗布量を自動設定。外壁・室内・防カビなど用途に合わせた正確な計算ができます。</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📱</div>
+        <h3>スマホで現場でもすぐ使える</h3>
+        <p>ホームセンターでもスマホから即座に計算。計算結果はSNSシェア・PDF印刷にも対応。現場作業を強力にサポートします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile UX -->
+<section class="mobile-section" id="mobile">
+  <div class="sec-inner">
+    <div class="mob-inner">
+      <div class="mob-phone" aria-hidden="true">
+        <div class="mob-screen">
+          <div class="ms-row">
+            <div class="ms-lbl">塗装面積（㎡）</div>
+            <div class="ms-val">7.5</div>
+          </div>
+          <div class="ms-row">
+            <div class="ms-lbl">塗料の種類</div>
+            <div class="ms-val">水性塗料（室内用）</div>
+          </div>
+          <div class="ms-row">
+            <div class="ms-lbl">塗布回数</div>
+            <div class="ms-val">2回塗り（推奨）</div>
+          </div>
+          <div class="ms-row">
+            <div class="ms-lbl">缶のサイズ</div>
+            <div class="ms-val">4L缶</div>
+          </div>
+          <div class="ms-cta">必要量を計算する →</div>
+        </div>
+      </div>
+      <div class="mob-text">
+        <h2>スマホでもラクラク入力！<br>現場でもすぐ使える</h2>
+        <p>ホームセンターで塗料を選びながら、その場でスマホから計算できます。大きなフォームと見やすい結果表示で、現場作業でもストレスフリー。</p>
+        <div class="mob-tags">
+          <span class="mob-tag">✓ タッチ操作最適化</span>
+          <span class="mob-tag">✓ 大きな入力フォーム</span>
+          <span class="mob-tag">✓ 見やすい結果表示</span>
+          <span class="mob-tag">✓ オフラインでも動作</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Result features -->
+<section class="result-preview" id="result-features">
+  <div class="sec-inner">
+    <div class="rp-inner">
+      <div class="rp-text">
+        <h2>結果画面でさらにかんたん！</h2>
+        <p>計算結果は一目でわかるカード形式で表示。SNSシェアやPDF印刷ボタンですぐに保存・共有できます。複数パターンの比較保存で、最適な塗料量を見つけられます。</p>
+        <div class="rp-btns">
+          <div class="rp-btn">📤 SNSシェア</div>
+          <div class="rp-btn">🖨️ PDF印刷</div>
+          <div class="rp-btn">💾 パターン保存</div>
+          <div class="rp-btn">📊 グラフ切替</div>
+        </div>
+      </div>
+      <div class="rp-result-card" aria-hidden="true">
+        <div style="font-size:13px;font-weight:700;color:#6B7280;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #F3F4F6;">🎨 計算結果</div>
+        <div style="text-align:center;padding:12px 0 20px;">
+          <div style="font-size:60px;font-weight:900;color:#F97316;line-height:1;">3.60</div>
+          <div style="font-size:18px;color:#78716C;margin-top:4px;">L 必要</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #F3F4F6;"><span style="color:#78716C;font-size:14px;">塗装面積</span><span style="font-weight:700;">7.50 ㎡</span></div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #F3F4F6;"><span style="color:#78716C;font-size:14px;">必要缶数（4L缶）</span><span style="font-weight:700;">1 缶</span></div>
+          <div style="display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #F3F4F6;"><span style="color:#78716C;font-size:14px;">概算費用</span><span style="font-weight:800;color:#1E40AF;font-size:20px;">¥4,800</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Steps -->
+<section class="steps-section" id="steps">
+  <div class="sec-inner">
+    <h2 class="sec-title">使い方はかんたん <em>3ステップ</em></h2>
+    <p class="sec-sub">難しい操作は一切不要。3ステップで計算完了！</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <span class="step-ico">📐</span>
+        <h3>塗装面積を入力</h3>
+        <p>壁の幅（m）と高さ（m）を入力。複数の壁がある場合は1面ずつ計算できます。窓・ドア面積の除外にも対応。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <span class="step-ico">🎨</span>
+        <h3>塗料の種類を選択</h3>
+        <p>水性・油性・外壁用・防カビなど、使用する塗料のタイプを選ぶと標準塗布量が自動設定されます。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <span class="step-ico">✅</span>
+        <h3>結果をご確認</h3>
+        <p>必要量（L）・必要缶数・概算費用が即座に表示。SNSシェアやPDF印刷ですぐに保存・共有できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Room guide -->
+<section class="rooms-section" id="guide">
+  <div class="sec-inner">
+    <h2 class="sec-title">部屋タイプ別<em>ガイド</em></h2>
+    <p class="sec-sub">用途別の推奨塗料と塗装のポイントを紹介</p>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-img" style="background:linear-gradient(135deg,#DBEAFE,#BFDBFE);">🧸</div>
+        <div class="room-body">
+          <span class="room-tag" style="background:#DBEAFE;color:#1E40AF;">子供部屋</span>
+          <h3>子供部屋・リビング</h3>
+          <p>低VOCの水性塗料がおすすめ。アレルギー対応の塗料を選ぶと安心。推奨：水性塗料・8㎡/L。2回塗りで均一な仕上がりに。</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background:linear-gradient(135deg,#CCFBF1,#99F6E4);">🛁</div>
+        <div class="room-body">
+          <span class="room-tag" style="background:#CCFBF1;color:#0F766E;">浴室・防水</span>
+          <h3>浴室・防水エリア</h3>
+          <p>湿気が多い場所には防カビ・防水塗料が必須。専用下地材との組み合わせで長持ち。推奨：防カビ塗料・7㎡/L。</p>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img" style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);">🏠</div>
+        <div class="room-body">
+          <span class="room-tag" style="background:#FEF3C7;color:#92400E;">外壁</span>
+          <h3>外壁・ウッドデッキ</h3>
+          <p>耐候性の高い外壁用塗料を使用。下地処理が仕上がりの鍵。雨季前の塗り直しが効果的。推奨：外壁用・6㎡/L。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="sec-inner">
+    <h2 class="sec-title">よくある<em>質問</em></h2>
+    <p class="sec-sub">塗料計算に関するよくある疑問にお答えします</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          このツールは無料ですか？
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">はい、完全無料・登録不要でご利用いただけます。スマートフォン・PC・タブレットのどちらでもご利用いただけます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          計算結果の精度はどのくらいですか？
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">塗料メーカーが公開している標準塗布量をもとに計算しています。実際の必要量は塗装面の状態や下地の吸収率によって変わるため、5〜10%の余裕を持って購入することをおすすめします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          油性・水性・防水など塗料の種類は選べますか？
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">はい。水性塗料（室内用）・油性塗料（室内用）・外壁用塗料・防カビ塗料の4種類に対応しています。それぞれの標準塗布量（㎡/L）と単価で自動計算します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          計算結果をSNSでシェアやPDF印刷できますか？
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">はい。計算結果をX（旧Twitter）・LINEでシェアできます。また、印刷ボタンからPDF保存も可能です。現場で職人さんや業者さんとも共有しやすいように設計しています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          外壁塗装の計算もできますか？
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">はい。「外壁用塗料」を選択すると、外壁用の標準塗布量（6㎡/L）で計算します。窓・ドアの面積を除外する機能もありますので、より正確な計算が可能です。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AdSense -->
+<div style="max-width:900px;margin:0 auto;padding:16px 24px;">
+  <ins class="adsbygoogle" style="display:block;min-height:90px;" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}</script>
+</div>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <h2>まずは無料で必要量を計算してみましょう！</h2>
+  <p>登録・ログイン不要。今すぐ無料でお試しいただけます。</p>
+  <a href="../" class="btn-white">必要量を計算する →</a>
+  <div class="cta-sub">✓ 登録不要 ✓ 完全無料 ✓ スマホ対応</div>
+</section>
+
+<!-- Affiliate -->
+<div style="border-top:1px solid #e5e7eb;padding:14px 16px 18px;background:#fff;">
+  <p style="text-align:center;font-size:11px;font-weight:600;color:#94a3b8;margin:0 0 10px;">スポンサーリンク</p>
+  <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:700px;margin:0 auto;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ7+18PTPM+1O96+699KI" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">《ヨガ》をはじめてみませんか？ホットヨガスタジオLAVA</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3WJ7+18PTPM+1O96+699KI" alt="">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">本・雑誌・ビジネス書が聴ける【audiobook.jp】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" alt="">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="lp-footer">
+  <div class="footer-links">
+    <a href="https://appadaycreator.com/">AppADayCreator</a>
+    <a href="../privacy-policy.html">プライバシーポリシー</a>
+    <a href="../terms.html">利用規約</a>
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+  <p>最終更新: 2026年6月 | 本サービスはアフィリエイト広告を掲載しています（A8.net）</p>
+  <p style="margin-top:4px;">© 2026 AppADayCreator. All services are free.</p>
+</footer>
+</body>
+</html>
